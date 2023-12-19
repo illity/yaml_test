@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Compile main.cpp
-        run: g++ main.cpp -o app.exe
+        run: g++ linearAlgebra.cpp -o app.exe
 
       - name: Run app.exe
         run: ./app.exe
