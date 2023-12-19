@@ -18,7 +18,7 @@ void printAsHex(const char* inputFile) {
     if (size == 0) return;
     cout << size << endl;
     for (i=0; i<size; i++) {
-        char d = memblock[i];
+        unsigned char d = memblock[i];
         cout << (int)d;
         cout << (char)(d/16+(d/16<10?48:55));
         cout << (char)(d%16+(d%16<10?48:55));
