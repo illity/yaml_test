@@ -30,4 +30,5 @@ jobs:
         run: pip install opencv-python
 
       - name: Run createImage.py
-        run: createImage.py
+        run: python3 createImage.py
+  
