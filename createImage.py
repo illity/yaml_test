@@ -5,3 +5,7 @@ arr = np.zeros([50,50])
 arr[20,20] = 255;
 
 cv2.imwrite('a.png', arr)
+
+with open('a.png','r') as f:
+  raw = f.read()
+  print(raw[:100])
