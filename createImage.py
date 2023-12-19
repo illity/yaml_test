@@ -6,6 +6,6 @@ arr[20,20] = 255;
 
 cv2.imwrite('a.png', arr)
 
-with open('a.png','r') as f:
+with open('a.png','r', encoding='utf-8') as f:
   raw = f.read()
   print(raw[:100])
