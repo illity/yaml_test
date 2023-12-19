@@ -15,11 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Compile main.cpp
-        run: g++ linearAlgebra.cpp -o app.exe
+      - name: Compile linearAlgebra.cpp
+        run: g++ linearAlgebra.cpp -o linearAlgebra.exe
 
       - name: Run app.exe
-        run: ./app.exe
+        run: ./linearAlgebra.exe
   image:
     runs-on: ubuntu-latest
 
@@ -32,3 +32,8 @@ jobs:
       - name: Run createImage.py
         run: python3 createImage.py
   
+      - name: Compile printAsHex.cpp
+        run: g++ printAsHex.cpp -o printAsHex.exe
+
+      - name: Run printAsHex.exe
+        run: ./printAsHex.exe
