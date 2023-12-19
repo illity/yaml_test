@@ -20,3 +20,14 @@ jobs:
 
       - name: Run app.exe
         run: ./app.exe
+  image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install opencv
+        run: pip install opencv-python
+
+      - name: Run createImage.py
+        run: createImage.py
